@@ -32,8 +32,8 @@ def is_valid_centroid(new_centroid, existing_centroids, min_distance):
             return False
     return True
 
-#Caminho para o shapefile no Google Drive
-filepath = '/content/Centroides_Disciplina_Visualizacao_de_Inf/Edificacoes_Construcoes_OpenBuildings_APP_AU.shp' #aqui eu capturo o arquivo do drive, que são os limites das edificações da área de estudo
+#Caminho para o shapefile
+filepath = 'Edificacoes_Construcoes_OpenBuildings_APP_AU.shp' #aqui eu capturo o arquivo do drive, que são os limites das edificações da área de estudo
 
 #Carregar os dados da camada poligonal (edificações)
 gdf = gpd.read_file(filepath)
